@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#section1 {
+    padding: 3rem 8rem 4rem 8rem;
+}
+
+#name-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#name-img > div > h1 {
+    font-size: 3.0rem;
+}
+
+#name-img > div > p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #B97C03;
+}
+
+#name-img > img {
+    border-radius: 70%;
+    width: 100px;
+    height: 80px;
+}
+
+#separator {
+    width: 100%;
+    height: 0.5rem;
+    background: linear-gradient(90deg, #000000 0%, #B97C03 100%);
+    margin-top: 1rem;
+}
+
+#section1 > section {
+    margin-top: 2rem;
+}
+
+#section1 > section > h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+#section1 > section:nth-of-type(1) > p{
+    font-size: 1.5rem;
+}
+
+.list-details {
+    margin-bottom: 1rem;
+}
+
+
+.list-details > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list-details > div > div > p:nth-of-type(1){
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.list-details > div > div > p{
+    font-size: 1.6rem;
+}
+
+.list-details > div > p{
+    font-size: 1.7rem;
+}
+
+.list-details > ul {
+    margin-top: 1rem;
+    max-width: 60%;
+}
+
+.list-details > ul > li {
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem;
+}
+
+
+#section1 > section:nth-of-type(3) > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+    
+#section1 > section:nth-of-type(3) > div > p:nth-of-type(2){
+    font-size: 1.7rem;
+}
+
+#section1 > section:nth-of-type(3) > div > p{
+   font-size: 1.5rem;
+}
+
+#section2 {
+    width: 40%;
+    background-color: #212120;
+    padding: 3rem 1rem 3rem 3rem;
+}
+
+#section2 > section > h2 {
+    color: #B97C03;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.space-section2 {
+    margin-top: 2.5rem;
+}
+
+#contact-contain > div {
+    display: flex;
+    align-items: flex-end;
+}
+.details {
+    color: #B97C03;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+
+#contact-contain > div > p > a {
+    color: #B97C03;
+    text-decoration: none;
+}
+
+#contact-contain > div > p > a:hover {
+    text-decoration: underline;
+}
+
+
+meter {
+    width: 80%;
+    height: 1rem;
+    margin-left: 1.5rem;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #B97C03; 
+}
+
+#tech-skills > div > p {
+    color: #B97C03;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+label{
+    display: block;
+    font-size: 1.6rem;
+}
+
+input{
+    width:40%;
+    padding: 7px 4px;
+}
+
+textarea{
+    width:40%;
+    padding: 0px 4px;
+}
+
+.btn{
+    background-color: #B97C03;
+    border: none;
+    color:white;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-left:4px;
+}
+
+
+
+@media screen and (max-width: 1075px) {
+    #section1 {
+        padding: 3rem 4rem 4rem 4rem;
+    }
+}
+
+@media screen and (max-width: 982px) {
+    body {
+        background-color: #212120;
+        color: #fff;
+    }
+    body > main {
+        flex-direction: column;
+    }
+
+    #section1 {
+        padding-bottom: 0;
+    }
+
+    #section2 {
+        width: auto;
+        background-color: #212120;
+        padding: 2rem 4rem 2rem 4rem;
+    }
+
+    #name-img > div > h1 {
+        font-size: 3.0rem;
+        color: #fff;
+    }
+
+    meter {
+        width: 50%;
+    }
+
+    .list-details > div{
+        display: block;
+    }
+
+    .list-details > div > div {
+        margin-right: 1rem;
+    }
+
+    #section1 > section:nth-of-type(3) > div{
+        display: block;
+    }
+
+    .list-details > ul {
+        max-width: 100%;
+    }
+
+    input{
+        width:60%;
+
+    }
+    
+    textarea{
+        width:60%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 480px) {
+    #name-img {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #name-img > img {
+        border-radius: 70%;
+        width: 120px;
+        height: 120px;
+    }
+
+    meter {
+        width: 70%;
+    }
+
+    #section1 > section > h2 {
+        margin-bottom: 1rem;
+    }
+
+    input{
+        width:90%;
+    }
+
+    textarea{
+        width:90%;
+    }
+    
+}
+
