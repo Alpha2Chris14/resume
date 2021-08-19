@@ -31,7 +31,7 @@
 
     
     $_SESSION["message"] = $message;
-    header("Location: index.php");
+    echo "Thanks For Submitting";
 
     function test_input($data){
         $data = trim($data);
